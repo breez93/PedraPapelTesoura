@@ -54,23 +54,23 @@
         if($jogadas==$ComputerTurn){
             echo "Empate";
         }
-        elseif($jogadas=="Tesoura" || $ComputerTurn=="Papel"){
+        elseif($jogadas=="Tesoura" && $ComputerTurn=="Papel"){
             echo " O jogador ganha ";
         }
-        elseif($jogadas=="Pedra" || $ComputerTurn=="Tesoura"){
+        elseif($jogadas=="Pedra" && $ComputerTurn=="Tesoura"){
             echo " O jogador ganha ";
         }
-        elseif($jogadas=="Papel" || $ComputerTurn=="Pedra"){
+        elseif($jogadas=="Papel" && $ComputerTurn=="Pedra"){
             echo "O jogador ganha";
         }
-        if($jogadas=="Pedra" || $ComputerTurn=="Papel"){
+        elseif($jogadas=="Pedra" && $ComputerTurn=="Papel"){
             echo "Perdeste";
         }
         
-        elseif($jogadas=="Tesoura" || $ComputerTurn=="Pedra"){
+        elseif($jogadas=="Tesoura" && $ComputerTurn=="Pedra"){
             echo "Perdeste";
         }
-        elseif($jogadas=="Papel" || $ComputerTurn=="Tesoura"){
+        elseif($jogadas=="Papel" && $ComputerTurn=="Tesoura"){
             echo "Perdeste";
         }
        
